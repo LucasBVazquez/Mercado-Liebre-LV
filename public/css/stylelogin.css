@@ -1,0 +1,228 @@
+:root{
+    --main-background: #EAC926;;
+    --azul: #03264C;
+    --Celeste: #1259c3;
+    --Grisoscuro: #666;
+    --Grisclaro: #ebebeb;
+    --Verde: #39b54a;
+}
+/*---------------*/
+/*Selectores universale*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/*----------------------*/
+body{
+    background-color: var(--main-background);
+}
+/*Dando estilo al header*/
+
+.heder-div{
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.logo{
+    width: 45%;
+    margin: auto;
+}
+.barraB{
+    width: 50%;
+    display: flex;
+}
+.barraB input{
+    width: 90%;
+}
+.Info-pagos{
+    padding: 20px 0 20px;
+    margin: auto;
+    font-size: 15px;
+    text-align: center;
+}
+
+/*fin del header*/
+
+/*dando estilo a la nav var*/
+.barra-nav{
+    display: none;
+}
+.barra-nav a{
+    text-decoration: none;
+    color: #222222;
+}
+.barra-nav ul{
+    margin: 0;
+    padding: 0;
+}
+/*fin de la nav var*/
+
+/*la hamburguesa*/
+.burger-menu {
+    background-color: var(--azul);
+    color: white;
+    display: block;
+    max-width: 50px;
+    padding: 10px 0;
+    font-size: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin: auto
+}
+/*--------------------*/
+
+/*dando estilo al login*/
+.login-main{
+    background-color: #ebebeb;
+    width: 90%;
+    text-align: center;
+    padding-bottom: 5px;
+    margin: auto;
+    padding: 50px;
+}
+
+.login-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-login {
+    width: 300px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+.div-login{
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    color: #555555;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.2s ease-in-out;
+}
+
+input:focus {
+    border-color: #007bff;
+}
+
+main button {
+    width: 100%;
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+main button:hover {
+    background-color: #0056b3;
+}
+
+/*footer*/
+.div-foter{
+    text-align: center;
+}
+.texto{
+    font-size: 12px;
+}
+
+.fa-credit-card{
+    color: var(--Celeste);
+}
+
+.fa-gift {
+    color: var(--Celeste);
+}
+
+.fa-user-shield{
+    color: var(--Celeste);
+}
+
+.copirigt{
+    text-align: center;
+    font-size: 15px;
+}
+/*footer*/
+
+@media(min-width:538px){
+    /*header*/
+    .heder-div{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .logo{
+        width: 40%;
+    }
+    
+    .barraB{
+        width: 50%;
+    }
+    
+    .Info-pagos{
+        font-size: 20px;
+    }
+    
+    /*fin del header*/
+    
+    /*nav var*/
+    .barra-nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    .barra-nav ul{
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+    .barra-nav li{
+        font-size: 80%;
+        font-weight: 700;
+        display: flex;
+        margin:10px 5px 0px;
+    }
+    /*hamburguesa*/
+    .burger-menu{
+        display: none;
+    }
+}
+    /*barra de productos*/
+
+    /*responsive pc*/
+@media(min-width:1038px){
+
+    .heder-div{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo{
+        width: 20%;
+    }
+    
+    .barraB{
+        width: 30%;
+    }
+    
+    .Info-pagos{
+        font-size: 20px;
+    }
+}
